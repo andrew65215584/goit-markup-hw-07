@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW5</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>HW7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">  
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
 </head>
 
@@ -24,11 +24,11 @@
                 <a href="./index.html" class="logo"> <span class="accent-logo"> Web </span>  Studio  </a>
 
                 <!-- Навигационное меню шапки -->
-                <ul class="item-nav">
+                <ul class="site-nav-list">
 
-                    <li class="item-nav-li"> <a href="./index.html"     class="link current "> Студия </a> </li>
-                    <li class="item-nav-li"> <a href="./portfolio.html" class="link "> Портфолио </a> </li>
-                    <li class="item-nav-li"> <a href="./contacts.html" class="link "> Контакты </a> </li>
+                    <li class="site-nav-item"> <a href="./index.html"     class="link current "> Студия </a> </li>
+                    <li class="site-nav-item"> <a href="./portfolio.html" class="link "> Портфолио </a> </li>
+                    <li class="site-nav-item"> <a href="./contacts.html" class="link "> Контакты </a> </li>
 
                 </ul>
 
@@ -36,39 +36,37 @@
 
 
                 <!-- Телефон и емейл в шапке -->
-                <ul class="contacts-display list ">
+                <ul class="contacts-list">
                     <!-- имейл -->
-                    <li class="contacts-display-li">
-
-                        
-
+                    <li class="contacts-item">
+                      
                         <a href="mailto:info@devstudio.com" class="contacts contacts-email">
-                            <svg class="svg-item-envelop">
+                            <svg class="svg-item" width="15px" height="15px">
 
                                 <use href="./images/symb.svg#icon-envelope"> </use>
 
                             </svg>
                             
-                            <span>   info@devstudio.com </span>
+                            <span class="contacts-text">   info@devstudio.com </span>
                            
                         
                         </a>
 
                     </li>
                     <!-- телефон -->
-                    <li class="contacts-display-li">
+                    <li class="contacts-item">
 
                         
 
                         <a href="tel:+380961111111" class="contacts contacts-telephone">
 
-                            <svg class="svg-item-telephone">
+                            <svg class="svg-item" width="15px" height="15px">
 
                                 <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
 
                             </svg>
                             
-                            <span> +38 096 111 11 11  </span>
+                            <span class="contacts"> +38 096 111 11 11  </span>
                             
                         
                         </a>
@@ -96,7 +94,7 @@
 
                 <h1 class="hero-title"> эффективные решения <br> для вашего бизнеса </h1>
 
-                <button class="button modal-button" data-modal-open> Заказать услугу </button>
+                <button class="button modal-button"  data-modal-open> Заказать услугу </button>
 
                     
             </div>
@@ -746,7 +744,7 @@
                         <input type="email" name = "subscribe-email-footer" class="subscribe-input" placeholder="E-mail">
                         
  
-                        <button class="button primary" >  Подписаться 
+                        <button class="button primary" type="submit" >  Подписаться 
                         
                             <svg class="svg-item-clients telegram-footer" width="24" height = "24" >
 
@@ -788,7 +786,7 @@
             
              <div class="modal" >
 
-            <button class="close-modal-button " data-modal-close >
+            <button class="close-modal-button " type="submit" data-modal-close >
 
                                 <svg class="close-icon"  width="11" height="11" >
                                             

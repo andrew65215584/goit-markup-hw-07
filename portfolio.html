@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">  
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
 
 </head>
 
@@ -25,11 +25,11 @@
                 <a href="./index.html" class="logo"> <span class="accent-logo"> Web </span>  Studio  </a>
 
                 <!-- Навигационное меню шапки -->
-                <ul class="item-nav">
+                <ul class="site-nav-list">
 
-                    <li class="item-nav-li"> <a href="./index.html"     class="link "> Студия </a> </li>
-                    <li class="item-nav-li"> <a href="./portfolio.html" class="link current "> Портфолио </a> </li>
-                    <li class="item-nav-li"> <a href="./contacts.html" class="link  "> Контакты </a> </li>
+                    <li class="site-nav-item"> <a href="./index.html"     class="link "> Студия </a> </li>
+                    <li class="site-nav-item"> <a href="./portfolio.html" class="link current "> Портфолио </a> </li>
+                    <li class="site-nav-item"> <a href="./contacts.html" class="link  "> Контакты </a> </li>
 
                 </ul>
 
@@ -37,29 +37,40 @@
 
 
                 <!-- Телефон и емейл в шапке -->
-                <ul class="contacts-display list ">
+                <ul class="contacts-list">
                     <!-- имейл -->
-                    <li class="contacts-display-li">
+                    <li class="contacts-item">
+                      
+                        <a href="mailto:info@devstudio.com" class="contacts contacts-email">
+                            <svg class="svg-item" width="15px" height="15px">
 
-                        <svg class="svg-item-envelop">
+                                <use href="./images/symb.svg#icon-envelope"> </use>
 
-                            <use href="./images/symb.svg#icon-envelope"> </use>
-
-                        </svg>
-
-                        <a href="mailto:info@devstudio.com" class="contacts contacts-email">info@devstudio.com</a>
+                            </svg>
+                            
+                            <span class="contacts-text">   info@devstudio.com </span>
+                           
+                        
+                        </a>
 
                     </li>
                     <!-- телефон -->
-                    <li class="contacts-display-li">
+                    <li class="contacts-item">
 
-                        <svg class="svg-item-telephone">
+                        
 
-                            <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
+                        <a href="tel:+380961111111" class="contacts contacts-telephone">
 
-                        </svg>
+                            <svg class="svg-item" width="15px" height="15px">
 
-                        <a href="tel:+380961111111" class="contacts contacts-telephone"> +38 096 111 11 11 </a>
+                                <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
+
+                            </svg>
+                            
+                            <span class="contacts"> +38 096 111 11 11  </span>
+                            
+                        
+                        </a>
 
                     </li>
 
